@@ -236,7 +236,6 @@ section .title span{
   height: 500px;
   width: 500px;
   object-fit: cover;
-  border-radius: 5px;
   border: 1px solid #F20100;
 }
 .about-details .right{
