@@ -243,7 +243,7 @@ section .title span{
   position: relative;
   padding-bottom: 8px;
   opacity: 0;
-  transform: translateY(-30px);
+  transform: translateY(-5em);
   transition: transform 5s .1s cubic-bezier(0,1,.3,1),
               opacity .4s .1s ease-out;
   will-change: transform, opacity;
@@ -777,11 +777,14 @@ footer .text span a:hover{
     font-size: 25px;
     padding-top: 10px;
   }  
+  section .title{
+   margin-bottom: 0;
+   display: none;
+  }
   section .title span{
     color: #FFF;
     font-size: 30px;
     position: relative;
-    padding-bottom: 8px;
   }
   .resume {
     height: 100vh;
