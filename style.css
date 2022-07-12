@@ -874,6 +874,9 @@ footer .text span a:hover{
   .about .line {
    display: none;
   }
+  .home{
+    background: url("images/avatar.png") no-repeat center;
+  }
   .home .home-content{
     width: 100%;
     height: 100%;
@@ -988,6 +991,12 @@ footer .text span a:hover{
   nav .menu-btn,
   .navbar .menu .cancel-btn{
     display: block;
+  }
+  .resume {
+    background: url("images/remobile.png") no-repeat;
+  }
+  .home{
+    background: url("images/avatar.png") no-repeat center;
   }
   .home .text-two{
     font-size: 65px;
@@ -1117,7 +1126,6 @@ footer .text span:hover{
 footer .contactIcon .iconSocial{
   width: 20px;
   height: auto;
-  
 }
 }
 
@@ -1136,5 +1144,11 @@ footer .contactIcon .iconSocial{
 .product-thumb2 {
   width: 100%;
   height: 200px;
+}
+.resume {
+  background: url("images/remobile.png") no-repeat;
+}
+.home{
+  background: url("images/avatar.png") no-repeat center;
 }
 }
