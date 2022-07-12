@@ -177,7 +177,7 @@ nav.sticky .menu-btn{
 .home{
   height: 100vh;
   width: 100%;
-  background: url("images/avatar.png") no-repeat center;
+  background: url("images/avatar.png") no-repeat;
   background-size: cover;
   background-position:right;
   background-attachment: fixed;
@@ -1149,6 +1149,6 @@ footer .contactIcon .iconSocial{
   background: url("images/remobile.png") no-repeat;
 }
 .home{
-  background: url("images/avatar.png") no-repeat center;
+  background: url("images/avatar.png") no-repeat;
 }
 }
