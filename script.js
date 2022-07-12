@@ -6,6 +6,7 @@ let icon = document.querySelector(".icon");
 let arrow = document.querySelector(".arrow");
 let scrollDown = document.querySelector(".scrollDown");
 let scrollUp = document.querySelector(".scrollUp");
+let personal = document.querySelector(".personal");
 
   let about = document.querySelector(".aboutTitle");
   let resume = document.querySelector(".resumeTitle");
@@ -13,6 +14,46 @@ let scrollUp = document.querySelector(".scrollUp");
   let portfolio = document.querySelector(".portfolioTitle");
   let contact = document.querySelector(".contactTitle");
 
+  function isElementInViewport(el){
+    // special bonus for those using jQuery
+    if(typeof jQuery === "funtion" && el instanceof jQuery){
+          el=el[0];
+    }
+    var rect= el.getBoundingClientRect();
+    return(
+    (rect.top<=0
+    && rect.bottom>=0)
+    ||
+    (rect.bottom>=(window.innerHeight || document
+    .documentElement.clientHeight)&&
+    rect.top<=(window.innerHeight || document.documentElement
+    .clientHeight))
+    ||
+    (rect.top>= 0 && 
+       rect.bottom<=(window.innerHeight || document.documentElement.clientHeight)
+       )
+   );
+  }
+
+ var scroll = window.requestAnimationFrame||
+              function(callBack){window.setTimeout(callBack,
+                1000/60)};
+  var elementToShow = document.querySelectorAll(".show-on-scroll");
+  function loop(){
+    elementToShow.forEach(function(element){
+      if(isElementInViewport(element)){
+        element.classList.add('is-visible');
+      } else{
+        element.classList.remove('is-visible');
+      }
+    });
+    scroll(loop);
+  }
+  loop();
+
+  window.addEventListener('scroll',function(){
+    console.log('Scroll');
+  })
    arrow.animate([
     {left: '0'},
     {left:' 20px'},
@@ -27,11 +68,13 @@ window.onscroll = function () {
   if (document.documentElement.scrollTop > 20) {
     nav.classList.add("sticky");
     scrollBtn.style.display = "block";
-    scrollDown.style.display = "none"
+    scrollDown.style.display = "none";
+    personal.style.filter= 'blur(3px)';
   } else {
     nav.classList.remove("sticky");
     scrollBtn.style.display = "none";
-    scrollDown.style.display = "block"
+    scrollDown.style.display = "block";
+    personal.style.filter= 'none';
   }
 
   if (document.documentElement.scrollTop > 4700) {
@@ -169,7 +212,7 @@ for (var i = 0; i < navLinks.length; i++) {
    	  // stop timer 
    	  clearInterval(timer);
    	  // then started again timer
-   	  timer=setInterval(autoPlay,10000);
+   	  timer=setInterval(autoPlay,3000);
    }
  
   
@@ -178,8 +221,8 @@ for (var i = 0; i < navLinks.length; i++) {
       updateCircleIndicator();
   }
 
-  let timer=setInterval(autoPlay,4000);
-
+  let timer=setInterval(autoPlay,2000);
+  $('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
   
 
   

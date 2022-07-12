@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
+
+
 <body>
   <!-- Move to up button -->
   <div class="scroll-button">
@@ -23,7 +25,7 @@
       <ul class="menu">
           <li><a class="aboutTitle" href="#about">About</a></li>
           <li><a class="resumeTitle" href="#resume">Resume</a></li>
-          <li><a class="slideshowTitle" href="#slideshow">Slideshow</a></li>
+          <li><a class="slideshowTitle" href="#slideshow">ShowCase</a></li>
           <li><a class="portfolioTitle" href="#portfolio">Portfolio</a></li>
           <li><a class="contactTitle" href="#contact">Contact</a></li>
           <div class="cancel-btn">
@@ -54,16 +56,16 @@
 <!-- About Section Start -->
 <section class="about" id="about">
   <div class="content">
-    <div class="title"><span>About Me</span></div>
+    <div class="title"><span class="show-on-scroll">About Me</span></div>
   <div class="about-details">
-    <div class="left">
-      <img src="images/imageShut.jpg" alt="">
+    <div class="left" >
+      <img src="images/giphy.gif" class="show-on-scroll" alt="">
     </div>
    <div class="line">
     <img  src="images/Line 4.png" width="30%" height="100%" alt="">
    </div>
-    <div class="right">
-      <div class="topic">Hi ! I am Tang Duong Gia Dat</div>
+    <div class="right show-on-scroll">
+      <div class="topic ">Hi ! I am Tang Duong Gia Dat</div>
       <div class="center">
         <p >I’m Business Analyst and Mobile Developer. 
           Currently, I have tried my hand at a few personal projects.
@@ -89,8 +91,9 @@
 <!-- My Resume -->
 <section class="resume" id="resume">
   <!-- <img  src="images/Resume.png" width="100%" height="100%" alt=""> -->
-  <a href="./images/Resume.pdf">
+  <a href="./images/Resume.pdf" download="tangduong_giadat_resume">
     <div class="myresume" >
+     
     </div>
   </a>
 </section>
@@ -102,9 +105,9 @@
      <div class="slide active" style="background-image: url('images/1.png')">
          <div class="container">
              <div class="caption">
-                 <h1>Website Agency</h1>
-                 <p>08/2021 - 09/2021</p>
-                 <a href=""><span>→</span> See Work Archive</a>
+                
+                 <p>Products, software, and experiences.</p>
+                 <a href="#portfolio"><span>→</span> See Work Archive</a>
 
              </div>
          </div>
@@ -112,27 +115,25 @@
      <div class="slide" style="background-image: url('images/2.png')">
          <div class="container">
              <div class="caption">
-                 <h1>Convenion Store App</h1>
-                 <p>11/2021 - 01/2022</p>
-                 <a href=""><span>→</span> See Work Archive</a>
+           
+                 <p>Products, software, and experiences.</p>
+                 <a href="#portfolio"><span>→</span> See Work Archive</a>
              </div>
          </div>
      </div>
      <div class="slide" style="background-image: url('images/3.png')">
          <div class="container">
              <div class="caption">
-              <h1>Website Agency</h1>
-              <p>08/2021 - 09/2021</p>
-                 <a href=""><span>→</span> See Work Archive</a>
+              <p>Products, software, and experiences.</p>
+                 <a href="#portfolio"><span>→</span> See Work Archive</a>
              </div>
          </div>
      </div>
      <div class="slide" style="background-image: url('images/4.png')">
       <div class="container">
           <div class="caption">
-            <h1>Website Agency</h1>
-            <p>08/2021 - 09/2021</p>
-              <a href=""> <span>→</span> See Work Archive</a>
+            <p>Products, software, and experiences.</p>
+              <a href="#portfolio"> <span>→</span> See Work Archive</a>
           </div>
       </div>
   </div>
@@ -146,25 +147,25 @@
   <div class="product-container">
       <div class="product-card">
           <div class="product-image">
-              <img src="images/i1.png" class="product-thumb" alt="">
+              <img src="images/i1.jpg" class="product-thumb1 show-on-scroll" alt="">
               <p  class="card-btn">"Product Mobile App"</br>12/2021</p>
           </div>
       </div>
       <div class="product-card">
         <div class="product-image">
-            <img src="images/i2.png" class="product-thumb" alt="">
+            <img src="images/i2.jpg" class="product-thumb1 show-on-scroll" alt="">
             <p class="card-btn">"Product App"</br> 12/2019</p>
         </div>
     </div>
     <div class="product-card">
       <div class="product-image">
-          <img src="images/i3.png" class="product-thumb" alt="">
+          <img src="images/i3.jpg" class="product-thumb2 show-on-scroll" alt="">
           <p class="card-btn">"Product Website"</br> 09/2021</p>
       </div>
   </div>
   <div class="product-card">
     <div class="product-image">
-        <img src="images/i4.png" class="product-thumb" alt="">
+        <img src="images/i4.jpg" class="product-thumb2 show-on-scroll" alt="">
         <p class="card-btn">"Product Website"</br> 01/2022</p>
     </div>
     <div class="product-card">
@@ -210,6 +211,7 @@
      
     </div>
   </div>
+  
 
   </div>
 </section>
@@ -221,7 +223,7 @@
 <section class="contact" id="contact">
   <div class="content">
     <div class="title">
-      <img src="images/worklife.png" alt="" />
+      <img src="images/worklifegif.gif" alt="" />
     </div>
     <img class="scrollUp" src="images/scroll_up.png">
     <div class="text">
@@ -238,14 +240,15 @@
     <span>© giadat inc. all rights reserved.</span>
   </div>
   <div class="contactIcon">
-   <a href="https://github.com/tangduonggiadat?tab=repositories"><img class="iconSocial" src="images/GitHub.png" alt="" /></a>
-   <a href="https://www.instagram.com/tangduong_giadat/"><img class="iconSocial" src="images/Instagram.png" alt="" /></a>
-   <a href="https://www.linkedin.com/in/gia-%C4%91%E1%BA%A1t-b77491221/"><img class="iconSocial" src="images/Linkedin.png" alt="" /></a>
-   <a href="https://www.facebook.com/profile.php?id=100009457556078"><img class="iconSocial" src="images/Facebook.png" alt="" /></a>
-   <a href="https://www.behance.net/giat1"><img class="iconSocial" src="images/Behance.png" alt="" /></a>
+   <a href="https://github.com/tangduonggiadat?tab=repositories" target="mainframe"><img class="iconSocial" src="images/GitHub.png" alt="" /></a>
+   <a href="https://www.instagram.com/tangduong_giadat/" target="mainframe"><img class="iconSocial" src="images/Instagram.png" alt="" /></a>
+   <a href="https://www.linkedin.com/in/gia-%C4%91%E1%BA%A1t-b77491221/" target="mainframe"><img class="iconSocial" src="images/Linkedin.png" alt="" /></a>
+   <a href="https://www.facebook.com/profile.php?id=100009457556078" target="mainframe"><img class="iconSocial" src="images/Facebook.png" alt="" /></a>
+   <a href="https://www.behance.net/giat1" target="mainframe"><img class="iconSocial" src="images/Behance.png" alt="" /></a>
   </div>
 </footer>
 
   <script src="script.js"></script>
+  <script src="/path/to/parallax.js"></script>
 </body>
 </html>
