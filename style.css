@@ -180,7 +180,7 @@ nav.sticky .menu-btn{
   background: url("images/avatar.png") no-repeat right;
   background-size: cover;
   background-position:right;
-  background-attachment: fixed;
+  background-attachment: scroll;
   font-family: 'Ubuntu', sans-serif;
   position: relative;
   background-color: #1c1c1c;
@@ -1001,7 +1001,7 @@ footer .text span a:hover{
     font-size: 35px;
   }
   section .content{
-    padding-top: 0;
+    padding-top: 0px;
   }
   .contact .text{
     width: 100%;
@@ -1068,18 +1068,6 @@ footer .text span a:hover{
     background-attachment:scroll;
     font-family: 'Ubuntu', sans-serif;
     position: relative;
-  }
-  .home{
-    height: 100vh;
-    width: 100%;
-    background: url("images/avatar.png") no-repeat right;
-    background-size: cover;
-    background-position:right;
-    background-attachment: scroll;
-    font-family: 'Ubuntu', sans-serif;
-    position: relative;
-    background-color: #1c1c1c;
-   
   }
   /* Contact Me CSS */
 .contact{
