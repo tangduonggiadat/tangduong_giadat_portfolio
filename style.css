@@ -177,7 +177,7 @@ nav.sticky .menu-btn{
 .home{
   height: 100vh;
   width: 100%;
-  background: url("images/avatar.png") no-repeat center;
+  background: url("images/avatar.png") no-repeat;
   background-size: cover;
   background-position:right;
   background-attachment: fixed;
@@ -763,7 +763,7 @@ footer .text span a:hover{
   .resume {
     height: 100vh;
     width: 100%;
-    background: url("images/remobile.png") no-repeat;
+    background: url("images/reTablet.png") no-repeat;
     background-size: cover;
     background-position:right;
     background-attachment:fixed;
@@ -875,7 +875,7 @@ footer .text span a:hover{
    display: none;
   }
   .home{
-    background: url("images/avatar.png") no-repeat center;
+    background: url("images/avatar.png") no-repeat;
   }
   .home .home-content{
     width: 100%;
@@ -994,9 +994,6 @@ footer .text span a:hover{
   }
   .resume {
     background: url("images/remobile.png") no-repeat;
-  }
-  .home{
-    background: url("images/avatar.png") no-repeat center;
   }
   .home .text-two{
     font-size: 65px;
@@ -1147,8 +1144,5 @@ footer .contactIcon .iconSocial{
 }
 .resume {
   background: url("images/remobile.png") no-repeat;
-}
-.home{
-  background: url("images/avatar.png") no-repeat center;
 }
 }
