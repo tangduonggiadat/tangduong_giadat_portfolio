@@ -404,7 +404,6 @@ section  .topic{
   position: absolute;
   bottom: 60px;
   left: 70px;
-
 }
 .slideShow .container{
 	 flex-grow: 1;
@@ -763,7 +762,7 @@ footer .text span a:hover{
   .resume {
     height: 100vh;
     width: 100%;
-    background: url("images/reTablet.png") no-repeat;
+    background: url("images/remobile.png") no-repeat;
     background-size: cover;
     background-position:right;
     background-attachment:fixed;
@@ -874,9 +873,6 @@ footer .text span a:hover{
   .about .line {
    display: none;
   }
-  .home{
-    background: url("images/avatar.png") no-repeat;
-  }
   .home .home-content{
     width: 100%;
     height: 100%;
@@ -904,7 +900,12 @@ footer .text span a:hover{
     margin: auto;
     font-family: 'Ubuntu', sans-serif;
   }
-
+  .container{
+    margin:auto;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+  }
   /* PRODUCTS */
 .product {
   position: relative;
@@ -992,9 +993,6 @@ footer .text span a:hover{
   .navbar .menu .cancel-btn{
     display: block;
   }
-  .resume {
-    background: url("images/remobile.png") no-repeat;
-  }
   .home .text-two{
     font-size: 65px;
   }
@@ -1021,6 +1019,12 @@ footer .text span a:hover{
   }
   .about .content .right .tit_cont p{
     font-size:15px;
+  }
+  .container{
+    margin:auto;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
   }
   .about .content .right .icon{
     position:relative;
@@ -1054,7 +1058,16 @@ footer .text span a:hover{
     grid-column: unset;
     grid-row: unset;
   }
-  
+  .resume {
+    height: 100vh;
+    width: 100%;
+    background: url("images/remobile.png") no-repeat;
+    background-size: cover;
+    background-position:right;
+    background-attachment:fixed;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+  }
   /* Contact Me CSS */
 .contact{
   background: #1c1c1c;
@@ -1141,8 +1154,5 @@ footer .contactIcon .iconSocial{
 .product-thumb2 {
   width: 100%;
   height: 200px;
-}
-.resume {
-  background: url("images/remobile.png") no-repeat;
 }
 }
