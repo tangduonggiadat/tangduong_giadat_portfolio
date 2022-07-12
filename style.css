@@ -177,11 +177,12 @@ nav.sticky .menu-btn{
 .home{
   height: 100vh;
   width: 100%;
-  background: url("images/avatar.png") no-repeat;
+  background: url("images/avatar.png") no-repeat right;
   background-size: cover;
   background-position:right;
-  background-attachment: scroll;
+  background-attachment: fixed;
   font-family: 'Ubuntu', sans-serif;
+  position: relative;
   background-color: #1c1c1c;
  
 }
@@ -735,10 +736,7 @@ footer .text span a:hover{
   .about .line {
     display: none;
    }
-   section .content{
-    padding-top: 0;
-  }
-  
+
    section  .topic{
     justify-content: center;
     text-align: center;
@@ -899,7 +897,6 @@ footer .text span a:hover{
     height: auto;
   }
   section .content{
-    padding-top: 80px;
     width: 80%;
     margin: auto;
     font-family: 'Ubuntu', sans-serif;
@@ -1068,7 +1065,7 @@ footer .text span a:hover{
     background: url("images/remobile.png") no-repeat;
     background-size: cover;
     background-position:right;
-    background-attachment:scroll;
+    background-attachment:fixed;
     font-family: 'Ubuntu', sans-serif;
     position: relative;
   }
