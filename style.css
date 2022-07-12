@@ -189,7 +189,6 @@ nav.sticky .menu-btn{
 .home .home-content{
   width: 60%;
   height: 100%;
-  margin: auto;
   display: flex;
   padding-left: 80px;
   flex-direction: column;
@@ -779,7 +778,7 @@ footer .text span a:hover{
   }  
   section .title{
    margin-bottom: 0;
-   display: none;
+   padding-top: 30px;
   }
   section .title span{
     color: #FFF;
@@ -804,6 +803,7 @@ footer .text span a:hover{
     background-position:right;
     background-attachment: scroll;
     font-family: 'Ubuntu', sans-serif;
+    margin: 0;
     position: relative;
     background-color: #1c1c1c;
    
