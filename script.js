@@ -77,7 +77,7 @@ window.onscroll = function () {
     personal.style.filter= 'none';
   }
 
-  if (document.documentElement.scrollTop > 4700) {
+  if (document.documentElement.scrollTop > 4000) {
     scrollDown.style.display = "none"
     scrollUp.style.display = "block"
   } else{
