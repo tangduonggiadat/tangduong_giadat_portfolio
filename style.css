@@ -10,7 +10,7 @@
 }
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
 }
 ::-webkit-scrollbar-track {
     background: #1c1c1c;
@@ -193,7 +193,19 @@ nav.sticky .menu-btn{
   font-family: 'Ubuntu', sans-serif;
   position: relative;
   background-color: #1c1c1c;
- 
+}
+.home:hover{
+  height: 100vh;
+  width: 100%;
+  background: url("images/avatarArt.png") no-repeat right;
+  background-size: cover;
+  background-position:right;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+ transition: transform 5s .1s cubic-bezier(0,1,.3,1),
+              opacity .4s .1s ease-out; 
+  background-color: #1c1c1c;
 }
 .home .home-content{
   width: 60%;
