@@ -13,7 +13,7 @@ let personal = document.querySelector(".personal");
   let slideshow = document.querySelector(".slideshowTitle");
   let portfolio = document.querySelector(".portfolioTitle");
   let contact = document.querySelector(".contactTitle");
-
+  
   function isElementInViewport(el){
     // special bonus for those using jQuery
     if(typeof jQuery === "funtion" && el instanceof jQuery){
@@ -76,7 +76,7 @@ window.onscroll = function () {
     scrollDown.style.display = "block";
     personal.style.filter= 'none';
   }
-
+ 
   if (document.documentElement.scrollTop > 4000) {
     scrollDown.style.display = "none"
     scrollUp.style.display = "block"
