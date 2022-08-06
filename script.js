@@ -13,6 +13,7 @@ let personal = document.querySelector(".personal");
   let slideshow = document.querySelector(".slideshowTitle");
   let portfolio = document.querySelector(".portfolioTitle");
   let contact = document.querySelector(".contactTitle");
+  // let menu = document.getElementById(".menuTop");
   
   function isElementInViewport(el){
     // special bonus for those using jQuery
@@ -92,7 +93,7 @@ window.onscroll = function () {
      slideshow.style.color="#FFFFFF"
      portfolio.style.color="#FFFFFF"
      contact.style.color="#F20100"
-  }else if(document.documentElement.scrollTop<4300 && document.documentElement.scrollTop >3500){
+  }else if(document.documentElement.scrollTop<4300 && document.documentElement.scrollTop >3300){
     about.style.color="#FFFFFF"
     resume.style.color="#FFFFFF"
     slideshow.style.color="#FFFFFF"

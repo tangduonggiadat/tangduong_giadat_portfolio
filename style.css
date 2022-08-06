@@ -87,49 +87,31 @@
 .scrollUp{
   position: absolute;
   left: 20px;
-  bottom: 20%;
+  top: 10%;
   justify-content: center;
   width: 20px;
   height: auto;
-  animation: up 3s infinite;
-  opacity: 0;
-  /* transform: translateY(-5em);
-  transition: transform 5s .1s cubic-bezier(0,1,.3,1),
-              opacity .4s .1s ease-out;
-  will-change: transform, opacity; */
+  z-index: 1;
 }
-/* .contact .content .is-visible{
-  transform: rotateX(1deg);
-  opacity: 1;
-} */
-@keyframes up{
- 	0%{
-		transform:translateY(20px);
-	}
-	100%{
-		transform: translateY(-10px);
-	}
-}
+
+
 /* navbar styling */
 nav{
-  background-color: #1c1c1c;
+  background-color: none;
   position: fixed;
   width: 100%;
-  padding: 5px 0;
   z-index: 998;
   transition: all 0.3s ease;
   font-family: 'Ubuntu', sans-serif;
 }
 nav.sticky{
-  background: none;
-  padding: 15px 0;
+   padding: 15px 0;
 }
 nav .navbar{
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 nav .navbar .logo {
   width: 15%;
@@ -143,6 +125,7 @@ nav .navbar .menu{
   display: flex;
   position: relative;
   right: 10px;
+  
 }
 nav .navbar .menu li{
   list-style: none;
@@ -392,7 +375,6 @@ section  .topic{
 	background-position: center;
 	z-index:1; 
 	display:none;
-
 	animation: slide 2s ease-in-out;
 }
 .slideShow .slide.active{
@@ -514,14 +496,14 @@ text-align: left;
 .card-btn {
   position: absolute;
   top: 30px;
-  left: 18%;
-  transform: translateX(-50%);
+  left: 5%;
   text-transform: capitalize;
   font-size: 17px;
   font-weight: 600;
   transition: 0.5s;
   cursor: pointer;
   opacity: 0;
+  color: #1c1c1c;
 }
 
 .product-card:hover .card-btn {
@@ -690,15 +672,14 @@ footer .text span a:hover{
    }
    .product-thumb1 {
     width: 100%;
-    height: 300px;
+    height: 200px;
   }
   .product-thumb2 {
     width: 100%;
-    height: 300px;
+    height: 200px;
   }
   .card-btn {
-    top: 30px;
-    left: 25%;
+    left: 5%;
   }
 }
 /* Responsive Media Query */
@@ -752,6 +733,9 @@ footer .text span a:hover{
     position: relative;
     background-color: #1c1c1c;
    
+  }
+  .card-btn {
+    left: 5%;
   }
 }
 @media (max-width: 1000px) {
@@ -839,21 +823,21 @@ footer .text span a:hover{
     bottom: 30px;
     left: 30px;
  }
- .resume .myresume::after{
+  .resume .myresume::after{
   content: "See My Resume";
   color: #F20100;
   text-decoration: underline;
   font-size: 15px;
   font-weight: bold;
   transition: all 500ms;
-}
-.resume .myresume:hover::after{
+ } 
+ .resume .myresume:hover::after{
   content: "Download Now";
   color: #FFFFFF;
   text-decoration: underline;
   font-size: 10p;
   font-weight: bold;
-}
+ }
  .about .content .right .tit_cont p{
   
   font-size:20px;
@@ -864,7 +848,7 @@ footer .text span a:hover{
   width: 10px;
   justify-content: center;
   cursor: pointer;
-}
+ }
 .about .content .right .icon .arrow{
   position: absolute;
   width: 100%;
@@ -886,6 +870,9 @@ footer .text span a:hover{
 .product-thumb2 {
   width: 100%;
   height: 200px;
+}
+.card-btn {
+  left: 5%;
 }
 }
 
@@ -1022,8 +1009,7 @@ footer .text span a:hover{
   height: 300px;
 }
 .card-btn {
-  top: 30px;
-  left: 25%;
+  left: 5%;
 }
 
 }
