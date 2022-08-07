@@ -93,13 +93,13 @@ window.onscroll = function () {
      slideshow.style.color="#FFFFFF"
      portfolio.style.color="#FFFFFF"
      contact.style.color="#F20100"
-  }else if(document.documentElement.scrollTop<4300 && document.documentElement.scrollTop >3300){
+  }else if(document.documentElement.scrollTop<4300 && document.documentElement.scrollTop >3200){
     about.style.color="#FFFFFF"
     resume.style.color="#FFFFFF"
     slideshow.style.color="#FFFFFF"
     portfolio.style.color="#F20100"
     contact.style.color="#FFFFFF"
-  }else if(document.documentElement.scrollTop <3600 && document.documentElement.scrollTop >2500){
+  }else if(document.documentElement.scrollTop <3600 && document.documentElement.scrollTop >2300){
     about.style.color="#FFFFFF"
     resume.style.color="#FFFFFF"
     slideshow.style.color="#F20100"
