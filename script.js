@@ -13,8 +13,20 @@ let personal = document.querySelector(".personal");
   let slideshow = document.querySelector(".slideshowTitle");
   let portfolio = document.querySelector(".portfolioTitle");
   let contact = document.querySelector(".contactTitle");
-  // let menu = document.getElementById(".menuTop");
+
+  const loaderContainer = document.querySelector('.loader-container');
+
+  function sayHello() {
+      loaderContainer.style.display = 'none';
+  }
   
+  function ani() {
+    loaderContainer.style.transform = 'translateY(45deg)';
+}
+setTimeout(sayHello, 6500);
+setTimeout(ani, 6400);
+
+
   function isElementInViewport(el){
     // special bonus for those using jQuery
     if(typeof jQuery === "funtion" && el instanceof jQuery){
@@ -87,13 +99,13 @@ window.onscroll = function () {
   }
 
 
-  if(document.documentElement.scrollTop >4200){
+  if(document.documentElement.scrollTop >4000){
      about.style.color="#FFFFFF"
      resume.style.color="#FFFFFF"
      slideshow.style.color="#FFFFFF"
      portfolio.style.color="#FFFFFF"
      contact.style.color="#F20100"
-  }else if(document.documentElement.scrollTop<4300 && document.documentElement.scrollTop >3200){
+  }else if(document.documentElement.scrollTop<4100 && document.documentElement.scrollTop >3200){
     about.style.color="#FFFFFF"
     resume.style.color="#FFFFFF"
     slideshow.style.color="#FFFFFF"
